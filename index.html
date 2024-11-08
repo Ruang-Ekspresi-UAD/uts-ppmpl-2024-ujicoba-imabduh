@@ -3,68 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Uji Coba UTS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.rings.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .vanta-background {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; 
+        }
+        .login-wrapper {
+            position: relative;
+            z-index: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        h3 {
+            font-size: 2em;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#sobre mim">Sobre mim</a></li>
-            <li><a href="#hobbies">My Hobbies</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-    <h1>Bem vindos tonis mansos!</h1>
-    <br>
-    <br>
-    <img src="images/profile.jpg" alt="Profile Picture" width="200">    <br>
-    <br>
-<section id="sobre mim">
-    </section>
-    <h2>Sobre mim</h2>
-    <p>Primeira vez a usar HTML and CSS portanto vai ficar lindo!.</p>
-        <p>Boas! Sou um corno manso, estou a aprender web development, sinto que já sou um profissional!.</p>
-<p>Bem easy brother! </p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <section id="hobbies">
-        <h2>Passatempos</h2>
-         </section>
-            <li>Cozinhar gandas cenas</li>
-            <li>Correr</li>
-            <li>Jogar pc 24/7</li>
-        </ul>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </nav>
-    <section id="contact">
-    </section>
-        <h2>Contact Me</h2>
-        <p>You can reach me at <a href="https://discord.gg/9p2k43WF" target="_blank" rel="noopener noreferrer">my Discord</a>.</p>
-
-    </section>
-</body>
-</nav>
-
-
-<body>
-    <!-- Existing content -->
-
-    <footer>
-        <p>&copy; 2024 [Jorge Conde]. All rights reserved.</p>
-    </footer>
+    <div class="vanta-background"></div>
+    <div class="login-wrapper">
+        <h1>Muhammad Abduh</h1>
+        <h3>2100016008</h3>
+    </div>
 </body>
 
-
+<script>
+    window.addEventListener('load', () => {
+        VANTA.RINGS({
+            el: ".vanta-background", 
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        });
+    });
+</script>
 </html>
